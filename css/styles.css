@@ -176,7 +176,6 @@ header nav ul li#involved:hover ul#involved-drop {
 }
 
 #index header {
-  position: absolute;
   z-index: 1;
   background: none;
 }
