@@ -182,6 +182,13 @@ header {
         url("../img/field.jpg");
     background-size: cover;
     background-position: center bottom;
+    .tagline-box {
+        .tagline {
+            h1 {
+                margin: 58px auto 0;
+            }
+        }
+    }
 }
 
 .half-banner {
