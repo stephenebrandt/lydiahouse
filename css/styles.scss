@@ -164,11 +164,23 @@ header {
     }
 }
 
+#index {
+    header {
+        position: absolute;
+        z-index: 1;
+        background: none;
+    }
+}
+
 .full-banner {
     display: table;
-    height: calc(100vh - 11.8em);
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    height: 100vh;
     width: 100vw;
-    background: url("../img/field.jpg");
+    background-image: linear-gradient(to bottom, #fff, transparent 181px),
+        url("../img/field.jpg");
     background-size: cover;
     background-position: center bottom;
 }
