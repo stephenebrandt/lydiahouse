@@ -3,7 +3,7 @@
         <section class="half-banner" id="about-banner">
             <div class="tagline-box">
                 <div class="tagline">
-                    <h1>About Lydia House</h1>
+                    <h1>About Lydia&nbsp;House</h1>
                 </div>
             </div>
         </section>
@@ -27,7 +27,7 @@
                 <h2>Our Mission</h2>
                 <p>
                     Lydia House is a non-profit organization and a ministry of
-                    First Baptist of Orlando. Our mission is to minister to
+                    First Baptist Orlando. Our mission is to minister to
                     previously incarcerated women and create lasting change in
                     their lives by providing a residential, Faith-based program
                     that teaches Biblical Life Principles.

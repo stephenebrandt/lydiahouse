@@ -6,6 +6,6 @@
                 >
             </p>
         </footer>
-        <script src="js/parallax.js"></script>
+        <script src="js/code.min.js"></script>
     </body>
 </html>

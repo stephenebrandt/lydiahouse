@@ -40,6 +40,7 @@
                     <li>Sponsors</li>
                     <li>Birthday celebrations</li>
                 </ul>
+                <p style="text-align: center"><a href="#" onClick="myPopup('https://firstorlando.ccbchurch.com/goto/forms/811/responses/new', 'web', 500, 660); return false;" class="btn btn-pink">Sign Up to Volunteer</a><noscript><a href="https://firstorlando.ccbchurch.com/goto/forms/811/responses/new" target="_blank" class="btn btn-pink">Sign Up to Volunteer</a></noscript></p>
             </article>
         </section>
 

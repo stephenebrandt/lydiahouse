@@ -11,7 +11,8 @@
             <article>
                 <h2>Community Partners</h2>
                 <div class="partners">
-                    <p>Click on the logo of our community partner to go to their web site.</p>
+                    <!--<p>Click on the logo of our community partner to go to their web site.</p>-->
+                    <p>We are thankful for all of our community partners!</p>
                     <div class="partner">
                         <div class="partner-box" id="sc"></div>
                     </div>
@@ -23,6 +24,9 @@
                     </div>
                     <div class="partner">
                         <div class="partner-box" id="csc"></div>
+                    </div>
+                    <div class="partner">
+                        <div class="partner-box" id="dox"></div>
                     </div>
                     <div class="partner">
                         <div class="partner-box" id="fit"></div>
@@ -47,6 +51,9 @@
                     </div>
                     <div class="partner">
                         <div class="partner-box" id="up"></div>
+                    </div>
+                    <div class="partner">
+                        <div class="partner-box" id="vl"></div>
                     </div>
                 </div>
             </article>

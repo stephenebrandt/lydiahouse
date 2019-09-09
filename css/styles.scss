@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap&subset=latin-ext");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=EB+Garamond:400i,500i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond:400i&display=swap");
 @import url("https://use.typekit.net/vrh8ueg.css");
 
 $gray: #98999a;
@@ -24,6 +24,9 @@ body {
     min-height: 100%;
     padding: 0;
     margin: 0;
+    @media only screen and (max-width: 1250px) {
+        font-size: 9px;
+    }
 }
 
 #index {
@@ -47,47 +50,76 @@ h1 {
         rgba(0, 0, 0, 0.3),
         rgba(0, 0, 0, 0)
     );
+    @media only screen and (max-width: 800px) {
+        font-size: 4.8em;
+    }
+    @media only screen and (max-width: 500px) {
+        font-size: 4.4em;
+    }
 }
 
 h2 {
     font-family: adobe-garamond-pro, serif;
-    font-size: 4.8em;
+    font-size: 4.6em;
     font-weight: 400;
     font-style: italic;
     color: $purp;
     text-align: center;
     margin: 8.2rem 0 3.2rem;
+    @media only screen and (max-width: 1250px) {
+    }
     &:first-of-type {
         margin-top: 0;
+    }
+    @media only screen and (max-width: 800px) {
+        font-size: 3.8em;
     }
 }
 
 h3 {
     font-family: "Montserrat", sans-serif;
-    font-size: 2em;
+    font-size: 2.2em;
     font-weight: 600;
     color: $pink;
     text-transform: uppercase;
     margin: 2.1em 0 0.8em;
+    @media only screen and (max-width: 800px) {
+        font-size: 1.8em;
+    }
+}
+
+a {
+    color: $purp;
+    text-decoration: none;
+    transition: 150ms ease-in-out;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .btn {
-    color: #fff;
-    padding: 0.8em 1.6em;
-    border-radius: 0.2em;
-    background: darken($gray, 10%);
+    color: $pink;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.4em 1.2em;
+    border-radius: 0.4em;
+    border: 2px solid $pink;
+    background: #fff;
     transition: 350ms ease-in-out;
     &:hover {
-        background: $gray;
+        background: lighten($pink, 25%);
+        text-decoration: none !important;
     }
 }
 
 .btn-pink {
     color: #fff;
     background: $pink;
+    border: 2px solid $pink;
     &:hover {
         color: #fff;
         background: lighten($pink, 10%);
+        border: 2px solid $pink;
     }
 }
 
@@ -97,36 +129,81 @@ header {
     max-width: 1680px;
     background: #fff;
     margin: auto;
+    @media only screen and (max-width: 860px) {
+        height: 8em;
+    }
     img {
+        height: 6.6em;
         margin: 2.6em 2.6em;
-        cursor: pointer;
+        @media only screen and (max-width: 860px) {
+            height: 5em;
+            margin: 1.5em 1em;
+        }
     }
     nav {
         display: block;
         position: absolute;
-        top: 51px;
+        top: 5.1em;
         right: 4em;
+        @media only screen and (min-width: 861px) {
+            display: block !important;
+        }
+        @media only screen and (max-width: 860px) {
+            display: none;
+            background-color: lighten($gray, 37.5%);
+            height: 100vh;
+            width: 280px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-left: 1px solid lighten($gray, 20%);
+            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.25);
+            z-index: 200;
+        }
         ul {
             list-style: none;
             padding: 0;
             margin: 0;
+            @media only screen and (max-width: 860px) {
+                position: absolute;
+                top: 40px;
+            }
             li {
                 display: inline;
-                font-size: 1.4em;
+                font-size: 14px;
                 font-weight: 500;
                 letter-spacing: 1px;
                 text-transform: uppercase;
                 margin-right: 2em;
+                @media only screen and (max-width: 1020px) {
+                    margin-right: 0.5em;
+                }
                 &:last-of-type {
+                    margin-left: 1em;
                     margin-right: 0;
+                    @media only screen and (max-width: 860px) {
+                        margin-left: 2.5em;
+                    }
+                }
+                @media only screen and (max-width: 860px) {
+                    display: block;
+                    margin: 2.5em;
+                }
+                &#under-drop {
+                    margin-top: 9.2em;
                 }
                 a {
+                    display: inline;
                     text-decoration: none;
                     color: $gray;
                     transition: 350ms ease-in-out;
                     padding: 1em;
                     &:hover {
                         color: darken($gray, 15%);
+                        text-decoration: none;
+                    }
+                    @media only screen and (max-width: 860px) {
+                        padding: 0;
                     }
                 }
                 &#involved {
@@ -136,12 +213,17 @@ header {
                     display: none;
                     position: absolute;
                     left: 0em;
-                    top: 2.4em;
-                    font-size: 0.7em;
-                    width: 22em;
+                    top: 2em;
+                    font-size: 14px;
+                    width: 216px;
                     padding: 0;
                     background: #fff;
                     box-shadow: rgba(0, 0, 0, 0.125) 0 2px 5px;
+                    @media only screen and (max-width: 860px) {
+                        display: inline;
+                        background: none;
+                        box-shadow: none;
+                    }
                     li {
                         display: block;
                         margin: 1em;
@@ -153,6 +235,10 @@ header {
                             &:hover {
                                 color: darken($gray, 15%);
                             }
+                            @media only screen and (max-width: 860px) {
+                                padding: 0;
+                                margin: 1em 0.25em;
+                            }
                         }
                     }
                 }
@@ -162,6 +248,27 @@ header {
             }
         }
     }
+    .icon {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        font-size: 2.6em;
+        color: $ltpk !important;
+        top: 1em;
+        right: 1em;
+        z-index: 300;
+        @media only screen and (min-width: 861px) {
+            display: none;
+        }
+    }
+}
+
+.menu-open {
+    display: block;
+}
+
+.no-scroll {
+    overflow-y: hidden;
 }
 
 #index {
@@ -178,14 +285,43 @@ header {
     z-index: 0;
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(to bottom, #fff, transparent 181px),
+    background-image: linear-gradient(
+            to bottom,
+            #fff,
+            transparent 25%,
+            transparent 50%,
+            $purp
+        ),
         url("../img/field.jpg");
     background-size: cover;
-    background-position: center bottom;
+    background-position: 80% center;
     .tagline-box {
         .tagline {
             h1 {
-                margin: 58px auto 0;
+                margin: 5vh 1em 0;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+                @media only screen and (max-width: 800px) {
+                    margin: 2em 0 0;
+                }
+            }
+            h3 {
+                color: #fff;
+                margin: 1em auto 1.5em;
+                text-shadow: 0 0 15px rgba(0, 0, 0, 1);
+            }
+            a {
+                display: inline-block;
+                font-size: 18px;
+                letter-spacing: 1px;
+                padding: 1em 2em;
+                width: 220px;
+                &:first-of-type {
+                    margin-right: 0.75em;
+                    @media only screen and (max-width: 670px) {
+                        margin-right: 0;
+                        margin-bottom: 0.75em;
+                    }
+                }
             }
         }
     }
@@ -227,6 +363,14 @@ header {
     background-image: url("../img/lakeeola.jpg");
 }
 
+#contact-banner {
+    background-image: url("../img/contact.jpg");
+}
+
+#give-banner {
+    background-image: url("../img/give.jpg");
+}
+
 .main-text {
     min-height: calc(50vh - 28.8rem);
     max-width: 1680px;
@@ -234,12 +378,25 @@ header {
     background: #fff;
     padding: 8.2rem 2rem;
     margin: auto;
+    @media only screen and (max-width: 800px) {
+        padding: 4.1em 2em;
+    }
+    @media only screen and (max-width: 500px) {
+        padding: 2.5em 1.75em;
+    }
 }
 
 article {
+    text-align: left;
     max-width: 1000px;
-    margin: auto;
+    margin: 6em auto 0;
     padding: 0 2em;
+    &:first-of-type {
+        margin-top: 0;
+    }
+    @media only screen and (max-width: 800px) {
+        padding: 0;
+    }
 }
 
 p,
@@ -252,8 +409,13 @@ ul.main-list {
 }
 
 ul.main-list {
-    margin: 1em 0 0 0;
+    display: inline-block;
+    margin: 1em aut0 0;
     padding-left: 5rem;
+    text-align: start;
+    @media only screen and (max-width: 800px) {
+        padding-left: 3.5rem;
+    }
 }
 
 footer {
@@ -283,6 +445,10 @@ footer {
             color: inherit;
             font-weight: 900;
             text-decoration: none;
+            cursor: pointer;
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
 }
@@ -296,6 +462,10 @@ footer {
     display: inline-block;
     box-sizing: border-box;
     cursor: pointer;
+    @media only screen and (max-width: 850px) {
+        margin: 9px;
+        width: calc(33% - 20px);
+    }
 }
 
 .partners {
@@ -334,6 +504,13 @@ footer {
     background-image: url(../img/csc-gray.png);
     &:hover {
         background-image: url(../img/csc-rgb.png);
+    }
+}
+
+#dox {
+    background-image: url(../img/dox-gray.png);
+    &:hover {
+        background-image: url(../img/dox-rgb.png);
     }
 }
 
@@ -393,6 +570,17 @@ footer {
     }
 }
 
+#vl {
+    background-image: url(../img/vl-gray.png);
+    &:hover {
+        background-image: url(../img/vl-rgb.png);
+    }
+}
+
+#contact-text > article {
+    text-align: center;
+}
+
 form {
     display: inline-block;
     font-size: 1.6em;
@@ -400,7 +588,16 @@ form {
     color: darken($gray, 15%);
     line-height: 1.8;
     letter-spacing: 1px;
+    text-align: left;
     width: 70%;
+    @media only screen and (max-width: 970px) {
+        width: 629px;
+        text-align: center;
+    }
+    @media only screen and (max-width: 700px) {
+        width: 100%;
+        max-width: 500px;
+    }
 }
 
 td:nth-child(odd) {
@@ -415,6 +612,7 @@ input,
 textarea {
     display: inline;
     box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
     font-size: 1em;
     color: darken($gray, 15%);
     line-height: 1.8;
@@ -433,11 +631,16 @@ textarea {
 }
 
 input {
-    width: calc(35vw - 0.5em);
-    max-width: calc(350px - 0.5em);
+    width: calc(50% - 8px);
     margin-bottom: 16px;
     &:nth-child(even) {
         margin-left: 10px;
+    }
+    @media only screen and (max-width: 700px) {
+        width: 100%;
+        &:nth-child(even) {
+            margin: 0 auto 16px;
+        }
     }
 }
 
@@ -447,30 +650,44 @@ textarea {
     height: 17.75em;
 }
 
-button {
+#send {
     cursor: pointer;
-    color: #fff;
-    font-size: 14px;
-    border: none;
-    text-transform: uppercase;
-    margin-top: 6px;
-    background: $pink;
-    transition: 350ms ease-in-out;
-    &:hover {
-        background: lighten($pink, 10%);
-    }
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+    margin-top: 0.5em;
 }
 
 #contact-info {
     display: inline-block;
     position: relative;
-    top: -94px;
-    width: 22vw;
-    max-width: 260px;
-    margin-left: 2em;
+    top: 3em;
+    width: 27.7em;
+    margin-left: 0;
+    text-align: center;
+    p {
+        text-align: center;
+    }
+    @media only screen and (max-width: 800px) {
+        margin-left: 0;
+        margin-bottom: 4em;
+        h3 {
+            text-align: center;
+        }
+    }
+    @media only screen and (min-width: 801px) and (max-width: 970px) {
+        display: inline;
+        margin: 8em 0 6em;
+        h3 {
+            text-align: center;
+        }
+    }
     h3 {
         &:first-child {
             margin-top: 0px;
         }
     }
+}
+#thankyou {
+    text-align: center;
 }

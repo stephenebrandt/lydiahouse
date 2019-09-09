@@ -1,6 +1,6 @@
 <?php include 'inc/header.php'; ?>
 
-        <section class="half-banner" id="contact">
+        <section class="half-banner" id="contact-banner">
             <div class="tagline-box">
                 <div class="tagline">
                     <h1>Contact Us</h1>
@@ -10,46 +10,50 @@
         <section class="main-text" id="contact-text">
             <article>
                 <h2>Get in Touch</h2>
-                <form action="">
+                <form action="post" id="contact-form" autocomplete="off" name="contact" onsubmit="submitForm(); return false;">
                     <input
                         type="text"
-                        name="first-name"
-                        id=""
-                        placeholder="First Name (required)"
+                        name="name"
+                        id="name"
+                        placeholder="Name (required)"
+                        required
                     />
                     <input
-                        type="text"
-                        name="last-name"
-                        id=""
-                        placeholder="Last Name (required)"
-                    />
-                    <input
-                        type="email"
-                        name="e-mail"
-                        id=""
+                        type="e-mail"
+                        name="email"
+                        id="email"
                         placeholder="E-mail Address (required)"
+                        required
+                    />
+                    <input
+                        type="tel"
+                        name="phone"
+                        id="phone"
+                        placeholder="Phone Number"
                     />
 
                     <input
                         type="text"
-                        mame="business"
-                        id=""
-                        placeholder="Business/Non-Profit"
+                        mame="organization"
+                        id="organization"
+                        placeholder="Organization"
                     />
                     <textarea
-                        name=""
-                        id=""
+                        name="message"
+                        id="message"
                         cols="30"
                         rows="10"
                         placeholder="Your message here... (required)"
+                        required
                     ></textarea>
-                    <button type="submit" class="btn btn-pink">Send</button>
+                    <input id="send" type="submit" class="btn btn-pink" value="Send">
                 </form>
+                <div id="contact-thanks"></div>
                 <div id="contact-info">
                     <h3>Call Us</h3>
                     <p>407-514-4223</p>
                     <h3>E-mail Us</h3>
-                    <p>LydiaHouse@FirstOrlando.com</p>
+                    <p><a href="mailto:LydiaHouse@FirstOrlando.com" target="_blank">LydiaHouse@FirstOrlando.com</a></p>
                     <h3>Write Us</h3>
                     <p>
                         <span style="font-weight: 600">Lydia House</span><br />
