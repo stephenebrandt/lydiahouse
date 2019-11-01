@@ -607,6 +607,14 @@ footer p a:hover {
   background-image: url(../img/dox-rgb.png);
 }
 
+#et {
+  background-image: url(../img/et-gray.png);
+}
+
+#et:hover {
+  background-image: url(../img/et-rgb.png);
+}
+
 #fit {
   background-image: url(../img/fit-gray.png);
 }

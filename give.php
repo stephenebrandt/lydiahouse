@@ -25,7 +25,7 @@
                     <li>Transportation</li>
                     <li>Resume writing/Interviewing skills</li>
                 </ul>
-                <p style="text-align: center"><a href="#" onClick="myPopup('https://pushpay.com/g/firstorlando?a=50&fnd=Lydia%20House', 'web', 500, 660); return false;" class="btn btn-pink give-now">Give Now</a><noscript><a href="https://pushpay.com/g/firstorlando?a=50&fnd=Lydia%20House" target="_blank" class="btn btn-pink">Click to RSVP</a></noscript></p>
+                <p style="text-align: center"><a href="https://pushpay.com/g/firstorlando?a=50&fnd=Lydia%20House" class="btn btn-pink give-now" target="_blank">Give Now</a></p>
             </article>
         </section>
 

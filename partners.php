@@ -29,6 +29,9 @@
                         <div class="partner-box" id="dox"></div>
                     </div>
                     <div class="partner">
+                        <div class="partner-box" id="et"></div>
+                    </div>
+                    <div class="partner">
                         <div class="partner-box" id="fit"></div>
                     </div>
                     <div class="partner">
